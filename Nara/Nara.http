@@ -1,0 +1,6 @@
+@Nara_HostAddress = http://localhost:5076
+
+GET {{Nara_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

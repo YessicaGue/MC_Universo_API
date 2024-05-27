@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MC_Universo_API", "MC_Universo_API\MC_Universo_API.csproj", "{8E7ACED9-6A9E-48B6-8F1E-F713F3209C72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nara", "Nara\Nara.csproj", "{5F5F6480-286E-4D44-A92C-B6D138EBE498}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E7ACED9-6A9E-48B6-8F1E-F713F3209C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7ACED9-6A9E-48B6-8F1E-F713F3209C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7ACED9-6A9E-48B6-8F1E-F713F3209C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7ACED9-6A9E-48B6-8F1E-F713F3209C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F5F6480-286E-4D44-A92C-B6D138EBE498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5F6480-286E-4D44-A92C-B6D138EBE498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5F6480-286E-4D44-A92C-B6D138EBE498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5F6480-286E-4D44-A92C-B6D138EBE498}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A7890FF-A707-45AE-B6B0-8F31C578C9BB}
+	EndGlobalSection
+EndGlobal

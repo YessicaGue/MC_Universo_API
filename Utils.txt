@@ -1,0 +1,28 @@
+docker run --name mc-postgres -p 5432:5432 --network host -e POSTGRES_DB=mc_db -e POSTGRES_USER=mc_admin -e POSTGRES_PASSWORD=admin_mc -d postgres
+
+
+-------------------- CMD Mac
+
+brew services start postgresql
+brew services stop postgresql
+
+psql postgres
+
+
+----------------------------------------------------- MIGRATIONS --------------------------------------------------------
+
+dotnet ef database update <previous-migration-name> // Rollback to previous migration - 0 is the initial migration
+dotnet ef migrations remove // Remove last migration
+
+dotnet ef migrations add AddBaseTables -p .\MC_Universo_API\MC_Universo_API.csproj
+
+dotnet ef database update -p .\MC_Universo_API\MC_Universo_API.csproj // Update database to last migration
+
+dotnet ef database update // Update database to last migration
+
+dotnet ef migrations add AddLookupTables -p .\MC_Universo_API\MC_Universo_API.csproj
+
+
+----------------------------------------------------- CODE GENERATOR ---------------------------------------------------
+
+dotnet aspnet-codegenerator controller -name CodigoInvitacionController -m CodigoInvitacion -dc UniversoContext -async -api -outDir Controllers
